@@ -27,8 +27,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-#Code Formatter
+# Code Formatter
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+# React gem
+gem 'react-rails'
+
+# Webpacker
+gem 'webpacker'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
