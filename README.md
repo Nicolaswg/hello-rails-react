@@ -12,7 +12,6 @@
 - Rails
 - React & Redux
 - Postgres
-- Rspec
 
 ## Getting Started
 
