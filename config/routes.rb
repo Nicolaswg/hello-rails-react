@@ -3,8 +3,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-
+	root "stactic#index"
 	namespace :v1, defaults: { format: 'json' } do
 		get 'messages', to: 'messages#index'
+	end
+
+	get '*page', to: 'stactic#index', constraints: ->(req) do
+		!req.xhr? && req.format.html?
 	end
 end
